@@ -1,0 +1,156 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #043249;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .btn-setting {
+  background-color: #b1b1b1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body .btn-setting:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body .setting-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+body .setting-container #difficulty {
+  width: 200px;
+  border: 0;
+  border-radius: 2px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 7px 15px;
+  margin-left: 10px;
+  font-size: 15px;
+  background-color: #8ad8e7;
+}
+
+body .container {
+  background-color: #042a31;
+  padding: 20px;
+  width: 400px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+body .container h2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+body .container input {
+  width: 350px;
+  border: 0;
+  border-radius: 2px;
+  padding: 7px 15px;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+body .container .time-container {
+  position: absolute;
+  top: 70px;
+}
+
+body .container .score-container {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+
+body .container h1 {
+  margin: 0;
+}
+
+body .setting-container.hide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+body #difficulty:focus, body input:focus {
+  outline: 0;
+}
+
+body .end-game-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+
+body .end-game-container h2 {
+  margin: 0;
+}
+
+body .end-game-container button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

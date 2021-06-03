@@ -1,0 +1,127 @@
+$white-color:#fff;
+$black-background-color:rgba(0,0,0,0.3);
+$background-color:#043249;
+body{
+    box-sizing: border-box;
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    .btn-setting{
+        background-color: rgb(177, 177, 177);
+        padding: 10px 15px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn-setting:active{
+        transform: scale(0.98);
+    }
+    .setting-container{
+        background-color: $black-background-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:$white-color;
+        transform: translateY(0%);
+        transition: transform 0.3s ease-in-out;
+        #difficulty{
+            width: 200px;
+            border: 0;
+            border-radius: 2px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 7px 15px;
+            margin-left: 10px;
+            font-size: 15px;
+            background-color: #8ad8e7;
+        }
+    }
+    
+    .container{
+        background-color: #042a31;
+        padding: 20px;
+        width: 400px;
+        color: $white-color;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px $black-background-color;
+        text-align: center;
+        position: relative;
+        h2{
+            background-color: $black-background-color;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+        input{
+            width: 350px;
+            border: 0;
+            border-radius: 2px;
+            padding: 7px 15px;
+            margin-left: 10px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .time-container{
+            position: absolute;
+            top: 70px;
+        }
+        .score-container{
+            position: absolute;
+            top: 70px;
+            right: 20px;
+        }
+        h1{
+            margin: 0;
+        }
+    }
+
+
+    .setting-container.hide{
+        transform: translateY(-100%);
+    }
+
+    #difficulty:focus, input:focus{
+        outline: 0;
+    }
+
+
+    .end-game-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
+        z-index: 1;
+        text-align: center;
+        h2{
+            margin: 0;
+            // border: 2px solid red;
+        }
+        button{
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    }
+}
